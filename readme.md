@@ -10,11 +10,12 @@ Create a file   testfile.php
 ### Go Router/confiles
 Crate a new file with the same name as the one before (testfile)
 
-Declare 3 constants  ROUTES, MIDDLEWARE, ROUTES_BODY
+####Declare 3 constants  ROUTES, MIDDLEWARE, ROUTES_BODY
 
 ROUTES -> you will declare the endpoit name => method => function name that will be call (declared in testfile.php)
 
-example ROUTES => ["testEndpoint" => ["POST" => "testFn"]]   on localhost/testfile.php/testEndpoint will be executed testFn declared inside 
+example ROUTES => ["testEndpoint" => ["POST" => "testFn"]]  
+#### on localhost/testfile.php/testEndpoint will be executed testFn declared inside 
 
 MIDDLEWARE -> you will define ["testfile.php" => "middlewareFnToBeCalled"] this function name has also to be declared on the file testfile.php
 It will be called everytime you call any endpoint inside /testfile.php/*
